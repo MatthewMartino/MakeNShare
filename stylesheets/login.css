@@ -37,15 +37,15 @@ form
 	padding-left: 10px;
 	padding-right: 10px;
 
-   	transition: border-color .25s ease-in-out;
-   	-moz-transition: border-color .25s ease-in-out;
-   	-webkit-transition: border-color .25s ease-in-out;
+   	transition: border-color .15s ease-in-out;
+   	-moz-transition: border-color .15s ease-in-out;
+   	-webkit-transition: border-color .15s ease-in-out;
 
 }
 .textbox:hover
 {
 
-	border-color: black;
+	border-color: #AAAAAA;
 
 }
 .textbox:focus
@@ -91,6 +91,41 @@ form
 {
 
 	margin: 0px;
+
+	border: none;
+	border-radius: 4px;
+
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+	transition: all .15s ease-in-out;
+   	-moz-transition: all .15s ease-in-out;
+   	-webkit-transition: all .15s ease-in-out;
+
+}
+.form-button:hover
+{
+	
+	margin-top: -4px;
+	margin-bottom: 4px;
+
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+
+}
+.form-button:active
+{
+
+	margin-top: -4px;
+	margin-bottom: 4px;
+
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+
+	background-color: white;
 
 }
 
