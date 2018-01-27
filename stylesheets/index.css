@@ -1,3 +1,7 @@
+/*============================================================*/
+/*========================= HTML Tags ========================*/
+/*============================================================*/
+
 html
 {
 	height: 100%;
@@ -11,6 +15,25 @@ body
 	margin: 0px;
 
 }
+
+img {
+	grid-row-start: 1;
+	height: 200px;
+}
+
+a {
+	grid-row-start: 3;
+	text-decoration: none;
+	color: white;
+	font-size: 300%;
+	font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+	color: #303030;
+}
+
+
 
 .container
 {
@@ -26,85 +49,87 @@ body
 
 	display: grid;
 
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 200px 40px;
+	grid-gap: 20px;
+
 	justify-content: center;
 	align-content: center;
 }
 
-img {
-	height: 200px;
+
+.item
+{
+	text-align: center;
 }
 
-@import "bourbon";
+#logo {
+	grid-row-start: 1;
+	grid-column: 1/5;
 
-$col-primary: #00c7ec;
-$corner-radius: 5px;
-
-.button {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: $col-primary;
-  border: 1px solid $col-primary;
-  border-radius: $corner-radius;
-
-  line-height: 3em;
-  padding-left: 5em;
-  padding-right: 5em;
-
-  box-shadow: 0 0 0 0 transparent;
-
-  @include transition(all 0.2s ease-in);
-
-  &:hover {
-    color: white;
-    box-shadow: 0 0 30px 0 transparentize($col-primary, 0.5);
-    background-color: $col-primary;
-
-    @include transition(all 0.2s ease-out);
-
-    &:before {
-      @include animation(shine 0.5s 0s linear);
-    }
-  }
-
-  &:active {
-    box-shadow: 0 0 0 0 transparent;
-    @include transition(box-shadow 0.2s ease-in);
-  }
-
-  &:before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-
-    opacity: 0;
-    background: white;
-    box-shadow: 0 0 15px 3px white;
-    @include transform(skewX(-20deg));
-  }
 }
 
-@include keyframes(shine) {
-  from {
-    opacity: 0;
-    left: 0%;
-  }
+#login {
+	grid-row-start: 2;
+	grid-column: 2/3;
+}
 
-  50% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    left: 100%;
-  }
+#register {
+	grid-row-start: 2;
+	grid-column: 3/4;
+}
+
+/*============================================================*/
+/*================ Login and Register Buttons ================*/
+/*============================================================*/
+
+.form-button
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px; 
+	padding-right: 20px; 
+
+	margin: 0px;
+
+	border: none;
+	border-radius: 4px;
+
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+	transition: all .15s ease-in-out;
+   	-moz-transition: all .15s ease-in-out;
+   	-webkit-transition: all .15s ease-in-out;
+
+   	background-color: #E74C3C;
+
+}
+
+.form-button:hover
+{
+	
+	margin-top: -4px;
+	margin-bottom: 4px;
+
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+
+	background-color: white;
+
+}
+.form-button:active
+{
+
+	margin-top: -4px;
+	margin-bottom: 4px;
+
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+
+	background-color: #FFA299;
+
 }
