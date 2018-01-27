@@ -15,13 +15,13 @@ body
 form
 {
 
-	width: 300px;
+	width: 500px;
 
 	display: grid;
 
-	grid-gap: 10px;
+	grid-gap: 20px;
 
-	grid-template-rows: 40px 40px 40px;
+	grid-template-rows: 50px 50px 20px 50px;
 	grid-template-columns: 2fr 3fr;
 
 }
@@ -29,17 +29,22 @@ form
 .textbox
 {
 
-	border-radius: 4px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #DDDDDD;
+	font-size: 16px;
+	font-weight: bold;
 
-	padding-left: 10px;
-	padding-right: 10px;
+	background-color: rgba(0,0,0,0);
 
-   	transition: border-color .15s ease-in-out;
-   	-moz-transition: border-color .15s ease-in-out;
-   	-webkit-transition: border-color .15s ease-in-out;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #DDDDDD;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+   	transition: all .25s ease-in-out;
+   	-moz-transition: all .25s ease-in-out;
+   	-webkit-transition: all .25s ease-in-out;
 
 }
 .textbox:hover
@@ -53,42 +58,27 @@ form
 
 	outline: none;
 
-}
+	border-bottom: none;
 
-#username-box
-{
-	
-	grid-column: 1/6;
-	grid-row-start: 1;
+	margin-bottom: 2px;
 
-}
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
 
-#password-box
-{
+	border-radius: 4px;
 
-	grid-column: 1/6;
-	grid-row-start: 2
-
-}
-
-#login-button
-{
-
-	grid-column: 1/2;
-	grid-row-start: 3;
-
-}
-
-#create-account-button
-{
-
-	grid-column: 2/6;
-	grid-row-start: 3;
+	background-color: #FFFFFF;
 
 }
 
 .form-button
 {
+
+	font-size: 16px;
+	font-weight: bold;
+
+	color: #FFFFFF;
 
 	margin: 0px;
 
@@ -129,6 +119,45 @@ form
 
 }
 
+#username-box
+{
+	
+	grid-column: 1/6;
+	grid-row-start: 1;
+
+}
+
+#password-box
+{
+
+	grid-column: 1/6;
+	grid-row-start: 2
+
+}
+
+#login-button
+{
+
+	grid-column: 1/2;
+	grid-row-start: 4;
+
+	background-color: #E74C3C;
+	color: #FFFFFF;
+
+}
+#login-button:active
+{
+	color: #943126;
+}
+
+#create-account-button
+{
+
+	grid-column: 2/6;
+	grid-row-start: 4;
+
+}
+
 .container
 {
 
@@ -136,6 +165,8 @@ form
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
+
+	background-color: #EEEEEE;
 
 	margin: 0px;
 
