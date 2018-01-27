@@ -42,6 +42,8 @@ form
 	font-size: 16px;
 	font-weight: bold;
 
+	font-family: 'Roboto Mono', monospace;
+
 	color: #AAAAAA;
 
 	background-color: rgba(0,0,0,0);
@@ -51,7 +53,7 @@ form
 	border-right: none;
 	border-bottom: 2px solid #DDDDDD;
 
-	padding-left: 20px;
+	padding-left: 0px;
 	padding-right: 20px;
 
    	transition: all .25s ease-in-out;
@@ -63,6 +65,7 @@ form
 {
 
 	border-color: #AAAAAA;
+	color: #606060;
 
 }
 .textbox:focus
@@ -73,6 +76,8 @@ form
 	color: #606060;
 
 	border-bottom: none;
+
+	padding-left: 20px;
 
 	margin-bottom: 2px;
 
@@ -89,8 +94,11 @@ form
 .form-button
 {
 
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
+	letter-spacing: 2px;
+
+	font-family: 'Roboto', sans-serif;
 
 	color: #FFFFFF;
 
@@ -161,7 +169,7 @@ form
 }
 #login-button:active
 {
-	color: #943126;
+	background-color: #943126;
 }
 
 #create-account-button
@@ -170,8 +178,14 @@ form
 	grid-column: 2/6;
 	grid-row-start: 4;
 
-	background-color: #FFFFFF;
+	background-color: #F8F8F8;
 	color: #AAAAAA;
+
+}
+#create-account-button:active
+{
+
+	background-color: #EEEEEE;
 
 }
 
@@ -184,6 +198,10 @@ form
 	min-height: 100%;
 
 	background-color: #E74C3C;
+	background-image: url(../img/material-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 
 	margin: 0px;
 
