@@ -56,9 +56,9 @@ form
 	padding-left: 0px;
 	padding-right: 20px;
 
-   	transition: all .25s ease-in-out;
-   	-moz-transition: all .25s ease-in-out;
-   	-webkit-transition: all .25s ease-in-out;
+   	transition: all .15s ease-in-out;
+   	-moz-transition: all .15s ease-in-out;
+   	-webkit-transition: all .15s ease-in-out;
 
 }
 .textbox:hover
@@ -212,3 +212,15 @@ form
 
 }
 
+#mini-logo
+{
+
+	height: 30px;
+
+	position: absolute;
+	right: 20px;
+	top: 20px;
+
+	opacity: 0.4;
+
+}
