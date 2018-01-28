@@ -76,11 +76,11 @@
 
 	<form method="post" enctype="multipart/form-data">
 	    <div class="upload-btn-wrapper">
-  			<button class="btn">Choose STL</button>
+  			<button class="btn">CHOOSE STL FILE</button>
   			<input type="file" name="fileToUpload" id="fileToUpload">
 		</div>
 
-	    <br><br><input type="submit" value="Upload File" name="submit" class="btn">
+	    <br><br><input type="submit" value="UPLOAD FILE" name="submit" class="btn">
 	</form>
  
         
