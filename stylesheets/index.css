@@ -62,7 +62,10 @@ body
 	grid-row-start: 2;
 
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
+
+	justify-content: center;
+	align-content: center;
 
 }
 
@@ -135,5 +138,23 @@ body
 {
 
 	background-color: #CB4335;
+
+}
+
+
+#diagram-image
+{
+
+	width: 100%;
+
+}
+
+
+#diagram-image-wrapper
+{
+
+	grid-column: 1;
+
+	width: 100%;
 
 }

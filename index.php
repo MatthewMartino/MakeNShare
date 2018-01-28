@@ -13,7 +13,7 @@
         <a href="login.php" id="login-button">LOG IN / REGISTER</a>
     </div>
     <div id="content">
-        
+        <div id="diagram-image-wrapper"><img src="img/diagram.png" id="diagram-image"></div>
     </div>
     <div id="footer">
         

@@ -22,7 +22,6 @@
 </div>
 
 
-
 <?php 
     require_once("sitewide/footer.php");
 ?>
