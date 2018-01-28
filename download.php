@@ -20,6 +20,7 @@ if(!empty($fileName) && file_exists($filePath)){
     exit;
 }else{
     echo 'The file does not exist.';
+
 }
 
 ?>
