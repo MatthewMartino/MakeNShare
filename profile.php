@@ -39,6 +39,7 @@
 
                          <form method=\"post\" action=\"download.php\">
                             <input type=\"hidden\" name=\"file\" value=".$row['file_name'].">
+                            <input type=\"hidden\" name=\"id\" value=".$_SESSION['u_id'].">
                             <input class=\"upload-item\" type=\"submit\" value=".$row['file_name'].">
                          </form>
 
