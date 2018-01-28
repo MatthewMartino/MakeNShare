@@ -24,21 +24,22 @@
   $result = mysqli_query($mysqli, $query); 
   $num_rows = mysqli_affected_rows($mysqli); 
 
-  echo "<h1>$num_rows Files Available</h1>";
+  echo "<h1 id=\"files-uploaded-label\">$num_rows FILES AVAILABLE FOR DOWNLOAD</h1>";
 
 
 
   if ($result && $num_rows > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
 
-      echo "
-             <h2>".$row["user_uid"]." uploaded ".$row["file_name"]."</h2>
-             <form method=\"post\" action=\"download.php\">
+    echo "
+        <div id=\"file-card\">
+            <h3>".$row["user_uid"]." uploaded ".$row["file_name"]."</h3>
+            <form method=\"post\" action=\"download.php\">
                 <input type=\"hidden\" name=\"file\" value=".$row['file_name'].">
                 <input type=\"hidden\" name=\"id\" value=".$row['user_id'].">
-                <input class=\"upload-item\" type=\"submit\" value=\"Download\">
-             </form>
-             
+                <input class=\"download-button\" type=\"submit\" value=\"DOWNLOAD\">
+            </form>
+        </div>
            ";
     }
   }
