@@ -80,7 +80,7 @@
   			<input type="file" name="fileToUpload" id="fileToUpload">
 		</div>
 
-	    <br><br><input type="submit" value="Upload File" name="submit" id="file-submit">
+	    <br><br><input type="submit" value="Upload File" name="submit" class="btn">
 	</form>
  
         
