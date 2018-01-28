@@ -43,6 +43,16 @@
 			{
 			 echo "The file ".  basename( $_FILES['fileToUpload']['name']). 
 			 " has been uploaded";
+
+			$filename = basename( $_FILES['fileToUpload']['name']);
+			$query = "INSERT INTO uploads
+              SET user_id ='$userid',
+                  file_name ='$filename', 
+                  file_path = '$target_path'"; 
+
+		    mysqli_query($mysqli, $query); 
+
+
 			} 
 			else
 			{
@@ -59,7 +69,7 @@
 <div class="container">
     <div id="header">
         <img src="img/gray-logo.png" id="logo">
-        <a href="home.php" id="upload-button">CANCEL</a>
+        <a href="home.php" id="upload-button">Back</a>
     </div>
     <div id="content">
 
