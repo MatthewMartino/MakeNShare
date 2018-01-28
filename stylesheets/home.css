@@ -103,7 +103,9 @@ h3
 	width: 100%;
 
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-gap: 20px;
+
+	justify-content: center;
 
 }
 
@@ -274,8 +276,6 @@ h3
 
 	width: 100%;
 	max-width: 500px;
-
-	margin-bottom: 20px;
 
 	display: grid;
 
