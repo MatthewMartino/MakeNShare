@@ -15,13 +15,14 @@
         <a href="uploads.php" id="upload-button">UPLOAD</a>
     </div>
     <div id="content">
+        <div id="account-info-header"><h1>ACCOUNT INFO</h1></div>
         <div id="account-info">
-            <h1>My Info</h1>
             <h2><?=$_SESSION['u_first']." ".$_SESSION['u_last']." (".$_SESSION['u_uid'].")"?></h2>
             <h3><?=$_SESSION['u_email']?></h3>
             <button onclick="window.location.href='logout.php'" id="logout-button">LOGOUT</button>
-
-            <h1>My Uploads</h1>
+        </div>
+        <div id="printer-section-header"><h1>MY UPLOADS</h1></div>
+        <div id="printer-section">
             <?php
               $userid = $_SESSION['u_id'];
               $query = "SELECT * FROM uploads WHERE user_id = '$userid'";
@@ -29,7 +30,6 @@
               $num_rows = mysqli_affected_rows($mysqli); 
 
               echo "<h2>$num_rows uploads</h2>"; 
-
 
               if ($result && $num_rows > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
@@ -41,15 +41,6 @@
               }
 
             ?> 
-        </div>
-
-
-
-
-        <div id="printer-section-header"></div>
-        <div id="printer-section">
-            <div class="printer-tile"></div>
-            <div class="printer-tile"></div>
         </div>
         <div id="models-section-header"></div>
         <div id="models-section">

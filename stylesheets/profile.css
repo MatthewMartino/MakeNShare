@@ -18,13 +18,13 @@ body
 h1
 {
 
-	font-size: 40px;
+	font-size: 16px;
+	letter-spacing: 2px;
 
 	padding: none;
 
 	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 2px;
-	color: #606060;
+	color: #BBBBBB;
 
 }
 
@@ -32,9 +32,8 @@ h2
 {
 	font-size: 25px; 
 	padding: none;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	letter-spacing: 2px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 	color: #606060;
 
 }
@@ -43,9 +42,8 @@ h3
 {
 	font-size: 20px; 
 	padding: none;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	letter-spacing: 2px;
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: bold;
 	margin-bottom: 30px; 
 	color: #606060;
 }
@@ -84,7 +82,6 @@ h3
 	grid-template-rows: 50px;
 
 	grid-gap: 20px;
-
 
 	align-content: center;
 
@@ -218,7 +215,9 @@ h3
 	
 }
 
-#logout-button {
+#logout-button
+{
+
 	font-size: 14px;
 	font-weight: bold;
 	letter-spacing: 2pt;
@@ -226,6 +225,8 @@ h3
 	text-decoration: none;
 	outline: none;
 	color: #FFFFFF;
+
+	border: none;
 
 	line-height: 50px;
 
@@ -292,8 +293,6 @@ h3
 	height: 100%;
 
 	margin: 0px;
-
-	background-color: red;
 
 }
 
