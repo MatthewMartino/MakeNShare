@@ -69,7 +69,7 @@
 <div class="container">
     <div id="header">
         <img src="img/gray-logo.png" id="logo">
-        <a href="home.php" id="upload-button">Back</a>
+        <a href="home.php" id="upload-button">BACK</a>
     </div>
     <div id="content">
 

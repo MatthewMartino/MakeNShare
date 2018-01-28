@@ -37,7 +37,15 @@
                 while ($row = mysqli_fetch_assoc($result)) {
 
                   echo "
-                         <li><a href=''><h3>".$row['file_name']."</h3><a></li>
+                         <li>
+
+                         <form method=\"post\" action=\"download.php\">
+                            <input type=\"hidden\" name=\"file\" value=".$row['file_name'].">
+                            <input class=\"upload-item\" type=\"submit\" value=".$row['file_name'].">
+                         </form>
+
+
+                         </li>
                        ";
                 }
               }
