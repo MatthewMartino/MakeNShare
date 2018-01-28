@@ -1,8 +1,8 @@
-
-
 html
 {
+
 	height: 100%;
+
 }
 
 
@@ -91,7 +91,13 @@ body
 {
 
 	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2pt;
 	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+
+	font-family: 'Roboto', sans-serif;
 
 	border-radius: 4px;
 
