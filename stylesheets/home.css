@@ -15,6 +15,28 @@ body
 
 }
 
+h1
+{
+
+	font-size: 25px;
+	letter-spacing: 2px;
+
+	padding: none;
+
+	font-family: 'Montserrat', sans-serif;
+	color: #606060;
+
+}
+
+h2
+{
+	font-size: 25px; 
+	padding: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #606060;
+
+}
 
 .container
 {

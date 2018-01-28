@@ -75,9 +75,12 @@
 
 
 	<form method="post" enctype="multipart/form-data">
-	    Select stl to upload:
-	    <input type="file" name="fileToUpload" id="fileToUpload">
-	    <input type="submit" value="Upload File" name="submit">
+	    <div class="upload-btn-wrapper">
+  			<button class="btn">Choose STL</button>
+  			<input type="file" name="fileToUpload" id="fileToUpload">
+		</div>
+
+	    <br><br><input type="submit" value="Upload File" name="submit" id="file-submit">
 	</form>
  
         

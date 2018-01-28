@@ -1,7 +1,7 @@
 <?php
 session_start();
 $fileName = $_POST['file'];
-$userid = $_SESSION['u_id'];
+$userid = $_POST['id'];
 
 
 
