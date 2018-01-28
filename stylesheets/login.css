@@ -12,7 +12,7 @@ body
 
 }
 
-form
+#form-container
 {
 
 	background-color: #F2F2F2;
@@ -20,6 +20,8 @@ form
 	border-radius: 4px;
 
 	padding: 100px;
+	padding-top: 50px;
+	padding-bottom: 70px;
 
 	-webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
 	-moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.20);
@@ -27,13 +29,18 @@ form
 
 	width: 500px;
 
+	text-align: center;
+
+}
+
+form
+{
 	display: grid;
 
 	grid-gap: 20px;
 
 	grid-template-rows: 50px 50px 20px 50px;
 	grid-template-columns: 2fr 3fr;
-
 }
 
 .textbox
@@ -217,10 +224,23 @@ form
 
 	height: 30px;
 
-	position: absolute;
-	right: 20px;
-	top: 20px;
+	padding-top: 50px;
 
-	opacity: 0.4;
+	display: inline;
+
+	opacity: 0.1;
+
+}
+
+h1
+{
+
+	font-size: 48px;
+
+	padding: none;
+
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	color: #DDDDDD;
 
 }
