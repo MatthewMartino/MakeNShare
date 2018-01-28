@@ -48,7 +48,7 @@ body
 	grid-row-start: 1;
 
 	display: grid;
-	grid-template-columns: 200px auto 200px;
+	grid-template-columns: 200px auto 250px;
 	grid-template-rows: 50px;
 
 	align-content: center;
@@ -97,6 +97,8 @@ body
 	text-align: center;
 	text-decoration: none;
 	color: #FFFFFF;
+
+	line-height: 50px;
 
 	font-family: 'Roboto', sans-serif;
 
