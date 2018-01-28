@@ -38,7 +38,8 @@ if (!empty($_POST)) {
                     $_SESSION['u_last'] = $row['user_last'];
                     $_SESSION['u_email'] = $row['user_email'];
                     $_SESSION['u_uid'] = $row['user_uid'];
-                    header("Location: register.php");
+                    $_SESSION['loggedin'] = true;
+                    header("Location: home.php");
                 }
             }
         }

@@ -55,10 +55,10 @@
                     $_SESSION['u_last'] = $last;
                     $_SESSION['u_email'] = $email;
                     $_SESSION['u_uid'] = $uid;
+                    $_SESSION['loggedin'] = true; 
 
 					$result = mysqli_query($mysqli, $sql);
-					echo"Account created!! YAY OMG JOHN NISSAN!";
-					//TODO: Handle account created. 
+					header("Location: home.php");
 				}
 			}
 		}

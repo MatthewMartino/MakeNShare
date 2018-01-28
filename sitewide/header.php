@@ -4,7 +4,7 @@
  <?php
  		$this_page = substr(strtolower(basename($_SERVER['PHP_SELF'])),0,strlen(basename($_SERVER['PHP_SELF']))-4);
  ?>
- 
+
     <link rel="stylesheet" type="text/css" href="stylesheets/<?=$this_page?>.css">
     
     <!--Fonts-->
@@ -22,3 +22,12 @@
     <meta name="theme-color" content="#ffffff"> 
 </head>
 <body>
+
+<?php
+	if($_SESSION['loggedin'] == true && ($this_page == "login" || $this_page == "register")) {
+		header("Location: home.php");
+	}
+	else if($_SESSION['loggedin'] == false && !($this_page == "login" || $this_page == "register" || $this_page == "index")) {
+		header("Location: index.php");
+	}
+?>
