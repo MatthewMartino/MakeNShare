@@ -15,7 +15,17 @@
         <a href="upload.php" id="upload-button">UPLOAD</a>
     </div>
     <div id="content">
-        
+        <div id="printer-section-header"></div>
+        <div id="printer-section">
+            <div class="printer-tile"></div>
+            <div class="printer-tile"></div>
+        </div>
+        <div id="models-section-header"></div>
+        <div id="models-section">
+            <div class="model-tile"></div>
+            <div class="model-tile"></div>
+            <div class="model-tile"></div>
+        </div>
     </div>
     <div id="footer">
         
