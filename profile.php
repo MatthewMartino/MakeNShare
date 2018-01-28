@@ -35,7 +35,7 @@
                 while ($row = mysqli_fetch_assoc($result)) {
 
                   echo "
-                         <li>
+                         <li class=\"upload-list-item\">
 
                          <form method=\"post\" action=\"download.php\">
                             <input type=\"hidden\" name=\"file\" value=".$row['file_name'].">
@@ -51,7 +51,7 @@
 
               echo"</ul>";
 
-              echo "<h3>Total Uploads: $num_rows</h3>";
+              echo "<h3 id=\"total-uploads-label\">Total Uploads: $num_rows</h3>";
 
             ?> 
         </div>
