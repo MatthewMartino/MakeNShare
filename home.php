@@ -24,7 +24,7 @@
   $result = mysqli_query($mysqli, $query); 
   $num_rows = mysqli_affected_rows($mysqli); 
 
-  echo "<h1 id=\"files-uploaded-label\">$num_rows FILES AVAILABLE FOR DOWNLOAD</h1>";
+  echo "<h1 id=\"files-uploaded-label\">$num_rows FILES AVAILABLE TO PRINT</h1>";
 
 
 
@@ -33,7 +33,7 @@
 
     echo "
         <div id=\"file-card\">
-            <h3>".$row["user_uid"]." uploaded ".$row["file_name"]."</h3>
+            <h3 class=\"uploaded-file-label\">".$row["user_uid"]." uploaded ".$row["file_name"]."</h3>
             <form method=\"post\" action=\"download.php\">
                 <input type=\"hidden\" name=\"file\" value=".$row['file_name'].">
                 <input type=\"hidden\" name=\"id\" value=".$row['user_id'].">
