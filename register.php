@@ -6,6 +6,19 @@
     require_once("sitewide/header.php"); 
 ?>
 
+
+<?php
+
+	
+
+
+
+?>
+
+
+
+
+
 <div class="container">
 	<div id="form-container">
 		<h1>SIGN UP</h1>
