@@ -55,8 +55,8 @@ form
 	border-radius: 4px;
 
 	padding: 100px;
-	padding-top: 30px;
-	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 150px;
 
 	height: 540px; 
 
@@ -255,21 +255,6 @@ form
 	grid-column: 1 / -1;
 	grid-row-start: 5
 
-}
-
-#login-button
-{
-
-	grid-column: 1 / 3;
-	grid-row-start: 7;
-
-	background-color: #E74C3C;
-	color: #FFFFFF;
-
-}
-#login-button:active
-{
-	background-color: #CB4335;
 }
 
 #create-account-button

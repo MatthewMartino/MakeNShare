@@ -82,7 +82,7 @@
 				<input type="password" name="cpassword" placeholder="Confirm Passphrase" class="textbox" id="cpassword-box"><br>
 				<input type="submit" value="CREATE AN ACCOUNT" class="form-button" id="create-account-button">
 		</form> 
-		<!-- <img src="img/gray-logo.png" id="mini-logo"> -->
+		<img src="img/gray-logo.png" id="mini-logo">
 	</div>
 </div>
 
