@@ -17,6 +17,7 @@ if (!empty($_POST)) {
 
     //Check if inputs are empty 
     if (empty($uid) || empty($pwd)) {
+        echo"empty fields";
         //TODO: handle no login
 
     } else {
@@ -24,12 +25,13 @@ if (!empty($_POST)) {
         $result = mysqli_query($mysqli, $sql);
         $resultCheck = mysqli_num_rows($result);
         if ($resultCheck < 1) {
+            echo"problem with db";
             //TODO: handle problem
 
         } else {
             if ($row = mysqli_fetch_assoc($result)) {
                 if ($pwd != $row['user_pwd']) {
-                    echo"fail";
+                    echo"wrong password";
                     //TODO: handle wrong password
                 }
                 else {

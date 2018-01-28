@@ -19,8 +19,7 @@
 	$cpwd = mysqli_real_escape_string($mysqli, $_POST['cpassword']);
 
 	if ($pwd != $cpwd) {
-		//TODO: Handle unequal passwords.
-		exit();
+		echo"passwords do not match";
 	}
 
 	$pwd = sha1($pwd); 
