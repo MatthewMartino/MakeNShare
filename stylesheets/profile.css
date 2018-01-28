@@ -15,6 +15,40 @@ body
 
 }
 
+h1
+{
+
+	font-size: 40px;
+
+	padding: none;
+
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	color: #606060;
+
+}
+
+h2
+{
+	font-size: 25px; 
+	padding: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #606060;
+
+}
+
+h3
+{
+	font-size: 20px; 
+	padding: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin-bottom: 30px; 
+	color: #606060;
+}
 
 .container
 {
@@ -29,7 +63,7 @@ body
 
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 250px auto 100px;
+	grid-template-rows: 150px auto 100px;
 
 	grid-gap: 20px;
 
@@ -49,6 +83,7 @@ body
 	grid-template-rows: 50px;
 
 	grid-gap: 20px;
+
 
 	align-content: center;
 
@@ -180,6 +215,55 @@ body
 	
 	border-bottom: 4px solid #303030;
 	
+}
+
+#logout-button {
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2pt;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #FFFFFF;
+
+	line-height: 50px;
+
+	font-family: 'Roboto', sans-serif;
+
+	border-radius: 4px;
+
+	background-color: #E74C3C;
+
+	height: 50px;
+	width: 150px; 
+
+
+
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+	transition: all .15s ease-in-out;
+   	-moz-transition: all .15s ease-in-out;
+   	-webkit-transition: all .15s ease-in-out;
+}
+
+#logout-button:hover
+{
+
+	margin-top: -4px;
+	margin-bottom: 4px;
+
+	-webkit-box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.20);
+
+}
+#logout-button:active
+{
+
+	background-color: #CB4335;
+
 }
 
 

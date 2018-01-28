@@ -10,7 +10,7 @@
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900, 500, 400, 300" rel="stylesheet"> 
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">

@@ -15,6 +15,9 @@
         <a href="upload.php" id="upload-button">UPLOAD</a>
     </div>
     <div id="content">
+
+
+        
         
     </div>
     <div id="footer">

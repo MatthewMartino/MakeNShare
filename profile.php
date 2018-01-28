@@ -15,6 +15,17 @@
         <a href="upload.php" id="upload-button">UPLOAD</a>
     </div>
     <div id="content">
+        <div id="account-info">
+            <h1>My Info</h1>
+            <h2><?=$_SESSION['u_first']." ".$_SESSION['u_last']." (".$_SESSION['u_uid'].")"?></h2>
+            <h3><?=$_SESSION['u_email']?></h3>
+            <button onclick="window.location.href='logout.php'" id="logout-button">LOGOUT</button>
+
+        </div>
+
+
+
+
         <div id="printer-section-header"></div>
         <div id="printer-section">
             <div class="printer-tile"></div>
