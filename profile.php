@@ -31,14 +31,18 @@
 
               echo "<h2>$num_rows uploads</h2>"; 
 
+              echo"<ul id=\"upload-list\">";
+
               if ($result && $num_rows > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
 
                   echo "
-                         <a href=''><h3> - ".$row['file_name']."</h3><a>
+                         <li><a href=''><h3>".$row['file_name']."</h3><a></li>
                        ";
                 }
               }
+
+              echo"</ul>";
 
             ?> 
         </div>
