@@ -19,17 +19,15 @@
         <div id="account-info">
             <h2><?=$_SESSION['u_first']." ".$_SESSION['u_last']." (".$_SESSION['u_uid'].")"?></h2>
             <h3><?=$_SESSION['u_email']?></h3>
-            <button onclick="window.location.href='logout.php'" id="logout-button">LOGOUT</button>
+            <button onclick="window.location.href='logout.php'" id="logout-button">LOG OUT</button>
         </div>
-        <div id="printer-section-header"><h1>MY UPLOADS</h1></div>
-        <div id="printer-section">
+        <div id="models-section-header"><h1>MY UPLOADS</h1></div>
+        <div id="models-section">
             <?php
               $userid = $_SESSION['u_id'];
               $query = "SELECT * FROM uploads WHERE user_id = '$userid'";
               $result = mysqli_query($mysqli, $query); 
-              $num_rows = mysqli_affected_rows($mysqli); 
-
-              echo "<h2>$num_rows uploads</h2>"; 
+              $num_rows = mysqli_affected_rows($mysqli);  
 
               echo"<ul id=\"upload-list\">";
 
@@ -52,13 +50,13 @@
 
               echo"</ul>";
 
+              echo "<h3>Total Uploads: $num_rows</h3>";
+
             ?> 
         </div>
-        <div id="models-section-header"></div>
-        <div id="models-section">
-            <div class="model-tile"></div>
-            <div class="model-tile"></div>
-            <div class="model-tile"></div>
+        <div id="printers-section-header"></div>
+        <div id="printers-section">
+            
         </div>
     </div>
     <div id="footer">
