@@ -140,7 +140,7 @@ body
 }
 
 
-#profile-button
+#browse-button
 {
 
 	font-size: 14px;
@@ -164,11 +164,11 @@ body
    	-moz-transition: all .15s ease-in-out;
    	-webkit-transition: all .15s ease-in-out;
 
-	grid-column: 4 / 5;
+	grid-column: 3 / 4;
 	grid-row: 1;
 
 }
-#profile-button:hover
+#browse-button:hover
 {
 
 	padding-bottom: 6px;
@@ -180,7 +180,7 @@ body
 }
 
 
-#browse-button
+#profile-button
 {
 
 	font-size: 14px;
@@ -202,16 +202,16 @@ body
    	-moz-transition: all .15s ease-in-out;
    	-webkit-transition: all .15s ease-in-out;
 
-	grid-column: 3 / 4;
+	grid-column: 4 / 5;
 	grid-row: 1;
 
 }
-#browse-button:hover
+#profile-button:hover
 {
 
 	padding-bottom: 6px;
 	margin-top: -8px;
 	
 	border-bottom: 4px solid #303030;
-
+	
 }
