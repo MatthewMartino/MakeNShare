@@ -12,12 +12,12 @@
         <img src="img/gray-logo.png" id="logo">
         <a href="home.php" id="browse-button">BROWSE</a>
         <a href="profile.php" id="profile-button">PROFILE</a>
-        <a href="upload.php" id="upload-button">UPLOAD</a>
+        <a href="uploads.php" id="upload-button">UPLOAD</a>
     </div>
     <div id="content">
 
 
-        
+
         
     </div>
     <div id="footer">

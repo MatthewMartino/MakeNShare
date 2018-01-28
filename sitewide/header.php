@@ -27,7 +27,7 @@
 	if($_SESSION['loggedin'] == true && ($this_page == "login" || $this_page == "register")) {
 		header("Location: home.php");
 	}
-	else if($_SESSION['loggedin'] == false && !($this_page == "login" || $this_page == "register" || $this_page == "index")) {
+	else if($_SESSION['loggedin'] == false && !($this_page == "login" || $this_page == "register" || $this_page == "index" || $this_page == "uploads")) {
 		header("Location: index.php");
 	}
 ?>
